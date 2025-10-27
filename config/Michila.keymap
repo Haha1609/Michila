@@ -72,7 +72,7 @@
    &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans 
    &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans 
    &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans 
-   &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans 
+   &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans 
                         >;
                 };
                 lower_layer {
@@ -82,8 +82,7 @@
    &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans 
    &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans 
    &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans 
-   &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans 
-                        >;
+   &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans 
                 };
 
                 raise_layer {
@@ -93,7 +92,7 @@
    &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans 
    &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans 
    &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans 
-   &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans 
+   &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans  
                         >;
                 };
         };
