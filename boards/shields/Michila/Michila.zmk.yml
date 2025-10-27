@@ -1,0 +1,20 @@
+file_format: "1"
+id: Michila
+name: Michila
+type: shield
+url: https://github.com/Haha1609/Michila
+type: board
+arch: arm
+output:
+  - usb
+  - ble
+features:
+  - keys
+  - studio
+  - pointer
+  - encoder
+siblings:
+  - Michila_left
+  - Michila_right
+
+  
