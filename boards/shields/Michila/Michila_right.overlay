@@ -1,7 +1,7 @@
 #include "Michila.dtsi"
 
 &default_transform { 
-    col-offset = <7>;
+    col-offset = <8>;
 };
 
 &kscan0 {
@@ -18,5 +18,6 @@
 &encoder_right {
     status = "okay";
 };
+
 
 
