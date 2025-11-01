@@ -82,7 +82,7 @@
 &kp X             &kp LALT  &kp LGUI  &kp LCTRL  &bt BT_CLR_ALL  &kp DOWN   &kp DOWN   &bt BT_CLR_ALL  &kp LCTRL  &kp LGUI   &kp LALT            &kp X
             >;
 
-            sensor-bindings = <&MouseScroll>, <&MouseScroll>;
+            sensor-bindings = <&inc_dec_kp A B>, <&MouseScroll>;
         };
 
         lower_layer {
