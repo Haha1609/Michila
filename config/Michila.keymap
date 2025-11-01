@@ -77,6 +77,24 @@
 
             tap-ms = <20>;
         };
+
+        Scroll_LR: Scroll_LR {
+            compatible = "zmk,behavior-sensor-rotate";
+            label = "SCROLL_LR";
+            #sensor-binding-cells = <0>;
+            bindings = <&msc SCRL_LEFT>, <&msc SCRL_RIGHT>;
+
+            tap-ms = <20>;
+        };
+
+        Scroll_RL: Scroll_RL {
+            compatible = "zmk,behavior-sensor-rotate";
+            label = "SCROLL_RL";
+            #sensor-binding-cells = <0>;
+            bindings = <&msc SCRL_RIGHT>, <&msc SCRL_LEFT>;
+
+            tap-ms = <20>;
+        };
     };
 
     keymap {
@@ -91,7 +109,7 @@
 &kp X             &kp LALT  &kp LGUI  &kp LCTRL  &bt BT_CLR_ALL  &kp DOWN   &kp DOWN   &bt BT_CLR_ALL  &kp LCTRL  &kp LGUI   &kp LALT            &kp X
             >;
 
-            sensor-bindings = <&Scroll_U_D>, <&Scroll_D_U>;
+            sensor-bindings = <&Scroll_D_U>, <&Scroll_D_U>;
         };
 
         lower_layer {
@@ -103,7 +121,7 @@
 &trans          &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans          &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp 0 0>, <&inc_dec_kp 0 0>;
+            sensor-bindings = <&Scroll_LR>, <&Scroll_LR>;
         };
 
         raise_layer {
