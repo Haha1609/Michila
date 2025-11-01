@@ -57,6 +57,16 @@
             #binding-cells = <0>;
             bindings = <&kp MINUS>, <&kp PERIOD>;
         };
+
+        keypress_layer: keypress_layer {
+            compatible = "zmk,behavior-hold-tap";
+            label = "KEYPRESS_LAYER";
+            bindings = <&none>, <&none>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <300>;
+            flavor = "balanced";
+        };
     };
 
     keymap {
