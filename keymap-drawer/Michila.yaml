@@ -15,7 +15,7 @@ layers:
   - O
   - P
   - {t: '$$mdi:backspace$$', type: backspace}
-  - $$mdi:apple-keyboard-caps$$
+  - {t: '$$mdi:apple-keyboard-caps$$', h: Lower Layer}
   - A
   - S
   - D
@@ -47,10 +47,10 @@ layers:
   - $$mdi:apple-keyboard-option$$
   - LGUI
   - $$mdi:apple-keyboard-control$$
-  - BT CLR ALL
+  - '&mkp MB3'
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-down-bold$$
-  - BT CLR ALL
+  - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$mdi:apple-keyboard-control$$
   - LGUI
   - $$mdi:apple-keyboard-option$$
@@ -70,7 +70,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -220,3 +220,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
+combos:
+- p: [13, 0]
+  k: BT CLR ALL
+  l: [Lower Layer]
