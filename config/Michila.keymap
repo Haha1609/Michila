@@ -89,8 +89,7 @@
 
     combos {
         compatible = "zmk,combos";
-
-        BT_CLR_ALL {
+        Combo_CLR_BT {
             bindings = <&bt BT_CLR_ALL>;
             key-positions = <13 0>;
             layers = <1>;
