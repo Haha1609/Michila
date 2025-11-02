@@ -59,16 +59,6 @@
             bindings = <&kp MINUS>, <&kp PERIOD>;
         };
 
-        keypress_layer: keypress_layer {
-            compatible = "zmk,behavior-hold-tap";
-            label = "KEYPRESS_LAYER";
-            bindings = <&none>, <&none>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <300>;
-            flavor = "balanced";
-        };
-
         Scroll_U_D: Scroll_U_D {
             compatible = "zmk,behavior-sensor-rotate";
             label = "SCROLL_U_D";
@@ -97,16 +87,26 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        BT_CLR_ALL {
+            bindings = <&bt BT_CLR_ALL>;
+            key-positions = <13 0>;
+            layers = <1>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
         default_layer {
             display-name = "Default Layer";
             bindings = <
-&kp TAB    &kp Q  &kp W     &kp E     &kp R      &kp T           &kp UP     &kp UP     &kp Y           &kp U      &kp I      &kp O     &kp P     &kp BSPC
-&kp CAPS   &kp A  &kp S     &kp D     &kp F      &kp G           &kp LEFT   &kp RIGHT  &kp H           &kp J      &kp K      &kp L     &kp SEMI  &kp LBKT
-&kp LSHFT  &kp Z  &kp X     &kp C     &kp V      &kp B           &kp RIGHT  &kp LEFT   &kp N           &kp M      &kp COMMA  &kp DOT   &kp FSLH  &kp RBKT
-&kp X             &kp LALT  &kp LGUI  &kp LCTRL  &bt BT_CLR_ALL  &kp DOWN   &kp DOWN   &bt BT_CLR_ALL  &kp LCTRL  &kp LGUI   &kp LALT            &kp X
+&kp TAB     &kp Q  &kp W     &kp E     &kp R      &kp T     &kp UP     &kp UP     &kp Y      &kp U      &kp I      &kp O     &kp P     &kp BSPC
+&lt 1 CAPS  &kp A  &kp S     &kp D     &kp F      &kp G     &kp LEFT   &kp RIGHT  &kp H      &kp J      &kp K      &kp L     &kp SEMI  &kp LBKT
+&kp LSHFT   &kp Z  &kp X     &kp C     &kp V      &kp B     &kp RIGHT  &kp LEFT   &kp N      &kp M      &kp COMMA  &kp DOT   &kp FSLH  &kp RBKT
+&kp X              &kp LALT  &kp LGUI  &kp LCTRL  &mkp MB3  &kp DOWN   &kp DOWN   &kp ENTER  &kp LCTRL  &kp LGUI   &kp LALT            &kp X
             >;
 
             sensor-bindings = <&Scroll_D_U>, <&Scroll_D_U>;
