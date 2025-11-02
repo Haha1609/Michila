@@ -26,10 +26,9 @@
 
 
    kscan0: kscan_matrix {
-        compatible = "zmk,kscan-gpio-matrix";
-        // define matrix here...
-	    wakeup-source;
-            diode-direction = "col2row";
+        compatible = "zmk,kscan-gpio-matrix";        // define matrix here...
+	        diode-direction = "col2row";
+			wakeup-source;
             row-gpios
             =<&gpio1 0 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
              <&gpio0 22 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,  //note
@@ -97,6 +96,7 @@
 &gpio1 {
     status = "okay";
 };
+
 
 
 
