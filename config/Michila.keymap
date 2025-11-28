@@ -123,14 +123,14 @@
 &kp X             &kp LALT  &kp LGUI  &kp LCTRL  &mkp MB3  &kp DOWN   &kp DOWN   &kp ENTER  &mo 1  &kp SPACE  &kp ENTER            &kp X
             >;
 
-            sensor-bindings = <&mouse_DU>, <&mouse_RL>;
+            sensor-bindings = <&Scroll_D_U>, <&Scroll_RL>;
         };
 
         lower_layer {
             display-name = "Lower Layer";
             bindings = <
-&kp ESC  &kp F1   &kp F2   &kp F3  &kp F4  &kp F5   &trans  &trans  &kp N1     &kp N2     &kp N3  &kp N4  &kp N5  &trans
-&mo 3    &kp F6   &kp F7   &kp F8  &kp F9  &kp F10  &trans  &trans  &kp N6     &kp N7     &kp N8  &kp N9  &kp N0  &trans
+&kp ESC  &kp F1   &kp F2   &kp F3  &kp F4  &kp F5   &trans  &trans  &kp N1     &kp N2     &kp N3  &kp N4  &kp N5  &kp DEL
+&mo 3    &kp F6   &kp F7   &kp F8  &kp F9  &kp F10  &trans  &trans  &kp N6     &kp N7     &kp N8  &kp N9  &kp N0  &kp SQT
 &mo 2    &kp F11  &kp F12  &trans  &trans  &trans   &trans  &trans  &kp MINUS  &kp EQUAL  &trans  &trans  &trans  &kp RSHFT
 &trans            &trans   &trans  &trans  &trans   &trans  &trans  &trans     &trans     &trans  &trans          &trans
             >;
