@@ -85,6 +85,24 @@
 
             tap-ms = <20>;
         };
+
+        mouse_DU: mouse_DU {
+            compatible = "zmk,behavior-sensor-rotate";
+            label = "MOUSE_DU";
+            #sensor-binding-cells = <0>;
+            bindings = <&mmv MOVE_DOWN>, <&mmv MOVE_UP>;
+
+            tap-ms = <20>;
+        };
+
+        mouse_RL: mouse_RL {
+            compatible = "zmk,behavior-sensor-rotate";
+            label = "MOUSE_RL";
+            #sensor-binding-cells = <0>;
+            bindings = <&mmv MOVE_RIGHT>, <&mmv MOVE_LEFT>;
+
+            tap-ms = <20>;
+        };
     };
 
     combos {
@@ -115,10 +133,10 @@
         lower_layer {
             display-name = "Lower Layer";
             bindings = <
-&trans  &kp F1   &kp F2   &kp F3  &kp F4  &kp F5   &trans  &trans  &kp N1     &kp N2     &kp N3  &kp N4  &kp N5  &trans
-&trans  &kp F6   &kp F7   &kp F8  &kp F9  &kp F10  &trans  &trans  &kp N6     &kp N7     &kp N8  &kp N9  &kp N0  &trans
-&mo 2   &kp F11  &kp F12  &trans  &trans  &trans   &trans  &trans  &kp MINUS  &kp EQUAL  &trans  &trans  &trans  &kp RSHFT
-&trans           &trans   &trans  &trans  &trans   &trans  &trans  &trans     &trans     &trans  &trans          &trans
+&kp ESC  &kp F1   &kp F2   &kp F3  &kp F4  &kp F5   &trans  &trans  &kp N1     &kp N2     &kp N3  &kp N4  &kp N5  &trans
+&mo 3    &kp F6   &kp F7   &kp F8  &kp F9  &kp F10  &trans  &trans  &kp N6     &kp N7     &kp N8  &kp N9  &kp N0  &trans
+&mo 2    &kp F11  &kp F12  &trans  &trans  &trans   &trans  &trans  &kp MINUS  &kp EQUAL  &trans  &trans  &trans  &kp RSHFT
+&trans            &trans   &trans  &trans  &trans   &trans  &trans  &trans     &trans     &trans  &trans          &trans
             >;
 
             sensor-bindings =
@@ -135,9 +153,7 @@
 &trans          &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans          &trans
             >;
 
-            sensor-bindings =
-                <&inc_dec_kp C_VOLUME_DOWN C_VOLUME_UP>,
-                <&inc_dec_kp 0 0>;
+            sensor-bindings = <&mouse_DU>, <&mouse_RL>;
         };
 
         layer_3 {
@@ -148,7 +164,9 @@
 &trans          &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans          &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp 0 0>, <&inc_dec_kp 0 0>;
+            sensor-bindings =
+                <&inc_dec_kp C_VOLUME_DOWN C_VOLUME_UP>,
+                <&inc_dec_kp 0 0>;
         };
     };
 };
