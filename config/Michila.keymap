@@ -103,13 +103,13 @@
         default_layer {
             display-name = "Default Layer";
             bindings = <
-&kp TAB    &kp Q  &kp W     &kp E     &kp R      &kp T     &kp UP     &kp UP     &kp Y      &kp U      &kp I      &kp O     &kp P     &kp BSPC
-&kp CLCK   &kp A  &kp S     &kp D     &kp F      &kp G     &kp LEFT   &kp RIGHT  &kp H      &kp J      &kp K      &kp L     &kp SEMI  &kp LBKT
-&kp LSHFT  &kp Z  &kp X     &kp C     &kp V      &kp B     &kp RIGHT  &kp LEFT   &kp N      &kp M      &kp COMMA  &kp DOT   &kp FSLH  &kp RBKT
-&kp X             &kp LALT  &kp LGUI  &kp LCTRL  &mkp MB3  &kp DOWN   &kp DOWN   &kp ENTER  &kp LCTRL  &kp LGUI   &kp LALT            &kp X
+&kp TAB    &kp Q  &kp W     &kp E     &kp R      &kp T     &kp UP     &kp UP     &kp Y      &kp U      &kp I      &kp O      &kp P     &kp BSPC
+&kp CLCK   &kp A  &kp S     &kp D     &kp F      &kp G     &kp LEFT   &kp RIGHT  &kp H      &kp J      &kp K      &kp L      &kp SEMI  &kp LBKT
+&kp LSHFT  &kp Z  &kp X     &kp C     &kp V      &kp B     &kp RIGHT  &kp LEFT   &kp N      &kp M      &kp COMMA  &kp DOT    &kp FSLH  &kp RBKT
+&kp X             &kp LALT  &kp LGUI  &kp LCTRL  &mkp MB3  &kp DOWN   &kp DOWN   &kp ENTER  &kp SPACE  &mo 1      &kp ENTER            &kp X
             >;
 
-            sensor-bindings = <&Scroll_D_U>, <&Scroll_D_U>;
+            sensor-bindings = <&Scroll_D_U>, <&Scroll_LR>;
         };
 
         lower_layer {
@@ -121,7 +121,9 @@
 &trans          &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans          &trans
             >;
 
-            sensor-bindings = <&Scroll_LR>, <&Scroll_LR>;
+            sensor-bindings =
+                <&inc_dec_kp DOWN UP_ARROW>,
+                <&inc_dec_kp LEFT_ARROW RIGHT>;
         };
 
         raise_layer {
