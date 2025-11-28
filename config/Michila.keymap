@@ -95,6 +95,12 @@
             key-positions = <13 0>;
             layers = <1>;
         };
+
+        layer2 {
+            bindings = <&mo 2>;
+            key-positions = <45 50>;
+            layers = <0>;
+        };
     };
 
     keymap {
@@ -109,7 +115,7 @@
 &kp X             &kp LALT  &kp LGUI  &kp LCTRL  &mkp MB3  &kp DOWN   &kp DOWN   &kp ENTER  &mo 1  &kp SPACE  &kp ENTER            &kp X
             >;
 
-            sensor-bindings = <&Scroll_D_U>, <&Scroll_LR>;
+            sensor-bindings = <&Scroll_D_U>, <&Scroll_RL>;
         };
 
         lower_layer {
@@ -123,7 +129,7 @@
 
             sensor-bindings =
                 <&inc_dec_kp DOWN UP_ARROW>,
-                <&inc_dec_kp LEFT_ARROW RIGHT>;
+                <&inc_dec_kp RIGHT LEFT>;
         };
 
         raise_layer {
@@ -135,7 +141,9 @@
 &trans          &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans          &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp 0 0>, <&inc_dec_kp 0 0>;
+            sensor-bindings =
+                <&inc_dec_kp C_VOLUME_DOWN C_VOLUME_UP>,
+                <&inc_dec_kp 0 0>;
         };
 
         layer_3 {
