@@ -119,10 +119,10 @@
         default_layer {
             display-name = "Default Layer";
             bindings = <
-&kp TAB    &kp Q  &kp W     &kp E     &kp R      &kp T     &kp UP     &kp UP     &kp Y      &kp U        &kp I      &kp O      &kp P     &kp BSPC
-&kp CLCK   &kp A  &kp S     &kp D     &kp F      &kp G     &kp LEFT   &kp RIGHT  &kp H      &kp J        &kp K      &kp L      &kp SEMI  &kp LBKT
-&kp LSHFT  &kp Z  &kp X     &kp C     &kp V      &kp B     &kp RIGHT  &kp LEFT   &kp N      &kp M        &kp COMMA  &kp DOT    &kp FSLH  &kp RBKT
-&kp X             &kp LALT  &kp LGUI  &kp LCTRL  &mkp MB3  &kp DOWN   &kp DOWN   &kp ENTER  &lt 1 SPACE  &lt 2 DEL  &kp ENTER            &kp X
+&mt ESC TAB  &kp Q  &kp W     &kp E     &kp R      &kp T     &kp UP     &kp UP     &kp Y      &kp U        &kp I      &kp O      &kp P     &kp BSPC
+&lt 3 CAPS   &kp A  &kp S     &kp D     &kp F      &kp G     &kp LEFT   &kp RIGHT  &kp H      &kp J        &kp K      &kp L      &kp SEMI  &kp LBKT
+&kp LSHFT    &kp Z  &kp X     &kp C     &kp V      &kp B     &kp RIGHT  &kp LEFT   &kp N      &kp M        &kp COMMA  &kp DOT    &kp FSLH  &kp RBKT
+&kp X               &kp LALT  &kp LGUI  &kp LCTRL  &mkp MB3  &kp DOWN   &kp DOWN   &kp ENTER  &lt 1 SPACE  &lt 2 DEL  &kp ENTER            &kp X
             >;
 
             sensor-bindings = <&Scroll_D_U>, <&Scroll_RL>;
@@ -151,7 +151,9 @@
 &trans          &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans          &trans
             >;
 
-            sensor-bindings = <&mouse_DU>, <&mouse_RL>;
+            sensor-bindings =
+                <&inc_dec_kp C_NEXT C_PREVIOUS>,
+                <&inc_dec_kp C_VOL_DN C_VOL_UP>;
         };
 
         layer_3 {
