@@ -6,27 +6,27 @@
 # `artifact-name` to assign a name to distinguish build outputs from each other:
 #
 # board: [ "nice_nano_v2" ]
-# shield: [ "Michila_left", "Michila_right" ]
+# shield: [ "Sweep_left", "Sweep_right" ]
 # include:
 #   - board: bdn9_rev2
 #   - board: nice_nano_v2
 #     shield: reviung41
 #   - board: nice_nano_v2
-#     shield: Michila_left
+#     shield: Sweep_left
 #     snippet: studio-rpc-usb-uart
 #     cmake-args: -DCONFIG_ZMK_STUDIO=y
-#     artifact-name: Michila_left_with_studio
+#     artifact-name: Sweep_left_with_studio
 #
 ---
 include:
   - board: nice_nano_v2
-    shield: Michila_left
+    shield: Sweep_left
     snippet: studio-rpc-usb-uart
     cmake-args: -DCONFIG_ZMK_STUDIO=y -DCONFIG_ZMK_STUDIO_LOCKING=n
 
 
   - board: nice_nano_v2
-    shield: Michila_right
+    shield: Sweep_right
 
 
   - board: nice_nano_v2

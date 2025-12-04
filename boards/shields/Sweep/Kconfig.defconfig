@@ -1,15 +1,15 @@
-if SHIELD_MICHILA_LEFT
+if SHIELD_Sweep_LEFT
 
 # Name must be less than 16 characters long!
 config ZMK_KEYBOARD_NAME
-    default "Michila"
+    default "Sweep"
 
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
 
 endif
 
-if SHIELD_MICHILA_LEFT || SHIELD_MICHILA_RIGHT
+if SHIELD_Sweep_LEFT || SHIELD_Sweep_RIGHT
 
 config ZMK_SPLIT
     default y

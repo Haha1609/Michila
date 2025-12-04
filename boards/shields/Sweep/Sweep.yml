@@ -1,6 +1,6 @@
 file_format: "1"
-id: Michila
-name: Michila
+id: Sweep
+name: Sweep
 type: shield
 url: https://github.com/Haha1609/Michila
 type: board
@@ -14,7 +14,7 @@ features:
   - pointer
   - encoder
 siblings:
-  - Michila_left
-  - Michila_right
+  - Sweep_left
+  - Sweep_right
 
   
