@@ -7,7 +7,7 @@
     zmk,kscan = &kscan0; 
     zmk,physical-layout = &physical_layout;
     zmk,battery = &vbatt;
-    zephyr,console = &cdc_acm_uart;
+    // zephyr,console = &cdc_acm_uart;//
     };
 
 	default_transform: keymap_transform_0 {
@@ -69,13 +69,13 @@
 };
 
 // Allow USB logging uncomment to use it
- &usbd {
-	status = "okay";
-	cdc_acm_uart: cdc_acm_uart {
-		compatible = "zephyr,cdc-acm-uart";
-		label = "CDC_ACM_0";
-	};
-};
+// &usbd {
+//	status = "okay";
+//	cdc_acm_uart: cdc_acm_uart {
+//		compatible = "zephyr,cdc-acm-uart";
+//		label = "CDC_ACM_0";
+//	};
+//};
 
  &physical_layout {
     transform = <&default_transform>;
@@ -96,6 +96,7 @@
 &gpio1 {
     status = "okay";
 };
+
 
 
 
