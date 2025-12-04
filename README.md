@@ -14,4 +14,4 @@ I made mistakes and damaged several components while building this keyboard. If 
 #5 way Navigation switch
 
 #Custom layout - #Custom shields - #Custom design
-![Sweep Keymap](keymap-drawer/Michila.svg)
+![Sweep Keymap](keymap-drawer/Sweep.svg)
