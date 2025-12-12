@@ -1,8 +1,8 @@
 file_format: "1"
-id: Michila
-name: Michila
+id: CorneV4
+name: CorneV4
 type: shield
-url: https://github.com/Haha1609/Michila
+url: https://github.com/Haha1609/CorneV4
 type: board
 arch: arm
 output:
@@ -14,7 +14,7 @@ features:
   - pointer
   - encoder
 siblings:
-  - Michila_left
-  - Michila_right
+  - CorneV4_left
+  - CorneV4_right
 
   
