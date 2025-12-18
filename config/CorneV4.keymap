@@ -93,6 +93,8 @@
             label = "MOUSE_DU";
             #sensor-binding-cells = <0>;
             bindings = <&mmv MOVE_DOWN>, <&mmv MOVE_UP>;
+
+            tap-ms = <25>;
         };
 
         mouse_RL: mouse_RL {
@@ -100,6 +102,8 @@
             label = "MOUSE_RL";
             #sensor-binding-cells = <0>;
             bindings = <&mmv MOVE_RIGHT>, <&mmv MOVE_LEFT>;
+
+            tap-ms = <25>;
         };
     };
 
@@ -125,7 +129,7 @@
 &kp X               &kp LALT  &kp LGUI  &kp LCTRL  &mkp MB3  &kp DOWN   &kp DOWN   &kp ENTER  &lt 1 SPACE  &lt 2 DEL  &kp ENTER            &kp X
             >;
 
-            sensor-bindings = <&Scroll_D_U>, <&Scroll_RL>;
+            sensor-bindings = <&Scroll_D_U>, <&mouse_DU>;
         };
 
         lower_layer {
