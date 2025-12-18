@@ -48,6 +48,7 @@
         mmv_enc: mmv_enc {
             compatible = "zmk,behavior-mouse-move";
             label = "MMV_ENC";
+            #binding-cells = <1>;
             trigger-period-ms = <0>;
             time-to-max-speed-ms = <0>;
             acceleration-exponent = <0>;
