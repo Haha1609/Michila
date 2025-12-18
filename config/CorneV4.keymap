@@ -29,7 +29,7 @@
 &mmv {
     time-to-max-speed-ms = <500>;
     acceleration-exponent = <1>;
-    trigger-period-ms = <4>;
+    trigger-period-ms = <8>;
 };
 
 &soft_off {
