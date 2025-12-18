@@ -49,6 +49,8 @@
             compatible = "zmk,behavior-mouse-move";
             label = "MMV_ENC";
             #binding-cells = <1>;
+            y-movement = <100>;
+            x-movement = <100>;
             trigger-period-ms = <0>;
             time-to-max-speed-ms = <0>;
             acceleration-exponent = <0>;
@@ -75,7 +77,6 @@
             label = "SCROLL_U_D";
             #sensor-binding-cells = <0>;
             bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
-
             tap-ms = <20>;
         };
 
@@ -93,7 +94,6 @@
             label = "SCROLL_RL";
             #sensor-binding-cells = <0>;
             bindings = <&msc SCRL_RIGHT>, <&msc SCRL_LEFT>;
-
             tap-ms = <20>;
         };
 
@@ -101,8 +101,7 @@
             compatible = "zmk,behavior-sensor-rotate";
             label = "MOUSE_DU";
             #sensor-binding-cells = <0>;
-            bindings = <&mmv_enc MOVE_Y(100)>, <&mmv_enc MOVE_Y(-100)>;
-
+            bindings = <&mmv_enc MOVE_DOWN>, <&mmv_enc MOVE_UP>;
             tap-ms = <50>;
         };
 
@@ -110,8 +109,7 @@
             compatible = "zmk,behavior-sensor-rotate";
             label = "MOUSE_RL";
             #sensor-binding-cells = <0>;
-            bindings = <&mmv MOVE_X(100)>, <&mmv MOVE_X(-100)>;
-
+            bindings = <&mmv MOVE_RIGHT>, <&mmv MOVE_LEFT>;
             tap-ms = <50>;
         };
     };
