@@ -27,8 +27,8 @@
 };
 
 &mmv {
-    time-to-max-speed-ms = <0>;       //500    
-    acceleration-exponent = <0>;
+    time-to-max-speed-ms = <500>;       //500    
+    acceleration-exponent = <1>;
     trigger-period-ms = <16>;
 };
 
@@ -45,6 +45,15 @@
 
 / {
     behaviors {
+
+        mmv_enc: mmv_enc {
+            compatible = "zmk,behavior-mouse-move";
+            label = "MMV_ENC";
+            trigger-period-ms = <0>;
+            time-to-max-speed-ms = <0>;
+            acceleration-exponent = <0>;
+        };
+
         Scroll_D_U: Scroll_D_U {
             compatible = "zmk,behavior-sensor-rotate";
             label = "SCROLL_D_U";
