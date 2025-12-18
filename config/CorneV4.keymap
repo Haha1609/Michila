@@ -94,7 +94,7 @@
             #sensor-binding-cells = <0>;
             bindings = <&mmv MOVE_DOWN>, <&mmv MOVE_UP>;
 
-            tap-ms = <40>;
+            tap-ms = <200>;
         };
 
         mouse_RL: mouse_RL {
@@ -103,7 +103,7 @@
             #sensor-binding-cells = <0>;
             bindings = <&mmv MOVE_RIGHT>, <&mmv MOVE_LEFT>;
 
-            tap-ms = <40>;
+            tap-ms = <200>;
         };
     };
 
