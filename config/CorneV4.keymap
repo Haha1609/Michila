@@ -27,9 +27,9 @@
 };
 
 &mmv {
-    time-to-max-speed-ms = <400>;
+    time-to-max-speed-ms = <500>;
     acceleration-exponent = <1>;
-    trigger-period-ms = <4>;
+    trigger-period-ms = <16>;
 };
 
 &soft_off {
@@ -94,7 +94,7 @@
             #sensor-binding-cells = <0>;
             bindings = <&mmv MOVE_DOWN>, <&mmv MOVE_UP>;
 
-            tap-ms = <20>;
+            tap-ms = <40>;
         };
 
         mouse_RL: mouse_RL {
@@ -103,7 +103,7 @@
             #sensor-binding-cells = <0>;
             bindings = <&mmv MOVE_RIGHT>, <&mmv MOVE_LEFT>;
 
-            tap-ms = <20>;
+            tap-ms = <40>;
         };
     };
 
