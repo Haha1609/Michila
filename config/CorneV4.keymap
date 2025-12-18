@@ -93,7 +93,8 @@
             compatible = "zmk,behavior-sensor-rotate";
             label = "SCROLL_RL";
             #sensor-binding-cells = <0>;
-            bindings = <&msc SCRL_RIGHT>, <&msc SCRL_LEFT>;
+            bindings = <&msc SCRL_RIGHT>, 
+                       <&msc SCRL_LEFT>;
             tap-ms = <20>;
         };
 
@@ -101,7 +102,8 @@
             compatible = "zmk,behavior-sensor-rotate";
             label = "MOUSE_DU";
             #sensor-binding-cells = <0>;
-            bindings = <&mmv_enc MOVE_DOWN>, <&mmv_enc MOVE_UP>;
+            bindings = <&mmv_enc MOVE_Y(100)>, 
+                       <&mmv_enc MOVE_Y(-100)>;
             tap-ms = <50>;
         };
 
@@ -109,7 +111,8 @@
             compatible = "zmk,behavior-sensor-rotate";
             label = "MOUSE_RL";
             #sensor-binding-cells = <0>;
-            bindings = <&mmv MOVE_RIGHT>, <&mmv MOVE_LEFT>;
+            bindings = <&mmv_enc MOVE_X(100)>,
+                       <&mmv_enc MOVE_X(-100)>;
             tap-ms = <50>;
         };
     };
