@@ -45,7 +45,6 @@
 
 / {
     behaviors {
-
         mmv_enc: mmv_enc {
             compatible = "zmk,behavior-mouse-move";
             label = "MMV_ENC";
@@ -101,7 +100,7 @@
             compatible = "zmk,behavior-sensor-rotate";
             label = "MOUSE_DU";
             #sensor-binding-cells = <0>;
-            bindings = <&mmv MOVE_Y(100)>, <&mmv MOVE_Y(-100)>;
+            bindings = <&mmv_enc>, <&mmv_enc>;
 
             tap-ms = <50>;
         };
