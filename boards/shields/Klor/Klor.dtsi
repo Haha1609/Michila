@@ -7,7 +7,7 @@
     zmk,kscan = &kscan0; 
     zmk,physical-layout = &physical_layout;
     zmk,battery = &vbatt;
-	//  zephyr,console = &cdc_acm_uart;   // Allow USB logging uncomment to use it
+	// zephyr,console = &cdc_acm_uart;   // Allow USB logging uncomment to use it
     };
 
 	default_transform: keymap_transform_0 {
