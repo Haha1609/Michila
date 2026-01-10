@@ -1,6 +1,6 @@
 file_format: "1"
-id: CorneV4
-name: CorneV4
+id: Klor
+name: Klor
 type: shield
 url: https://github.com/Haha1609/Michila
 type: board
@@ -14,8 +14,8 @@ features:
   - pointer
   - encoder
 siblings:
-  - CorneV4_left
-  - CorneV4_right
+  - Klor_left
+  - Klor_right
 
   
 

@@ -6,27 +6,27 @@
 # `artifact-name` to assign a name to distinguish build outputs from each other:
 #
 # board: [ "nice_nano_v2" ]
-# shield: [ "CorneV4_left", "CorneV4_right" ]
+# shield: [ "Klor_left", "Klor_right" ]
 # include:
 #   - board: bdn9_rev2
 #   - board: nice_nano_v2
 #     shield: reviung41
 #   - board: nice_nano_v2
-#     shield: CorneV4_left
+#     shield: Klor_left
 #     snippet: studio-rpc-usb-uart
 #     cmake-args: -DCONFIG_ZMK_STUDIO=y
-#     artifact-name: CorneV4_left_with_studio
+#     artifact-name: Klor_left_with_studio
 #
 ---
 include:
   - board: nice_nano_v2
-    shield: CorneV4_left
+    shield: Klor_left
     snippet: studio-rpc-usb-uart
     cmake-args: -DCONFIG_ZMK_STUDIO=y -DCONFIG_ZMK_STUDIO_LOCKING=n
 
 
   - board: nice_nano_v2
-    shield: CorneV4_right
+    shield: Klor_right
 
 
   - board: nice_nano_v2

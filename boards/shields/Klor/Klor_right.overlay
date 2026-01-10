@@ -1,7 +1,7 @@
-#include "CorneV4.dtsi"
+#include "Klor.dtsi"
 
 &default_transform { 
-    col-offset = <8>;
+    col-offset = <7>;
 };
 
 &kscan0 {
@@ -15,9 +15,9 @@
             ;
 };
 
-&encoder_right {
-    status = "okay";
-};
+//&encoder_right {
+//    status = "okay";
+//               };
 
 
 
