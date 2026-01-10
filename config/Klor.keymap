@@ -45,15 +45,7 @@
 
 / {
     behaviors {
-        Scroll_D_U: Scroll_D_U {
-            compatible = "zmk,behavior-sensor-rotate";
-            label = "SCROLL_D_U";
-            #sensor-binding-cells = <0>;
-            bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
-
-            tap-ms = <20>;
-        };
-
+        
         TD01: TD01 {
             compatible = "zmk,behavior-tap-dance";
             label = "TD01";
@@ -61,32 +53,6 @@
             bindings = <&kp MINUS>, <&kp PERIOD>;
         };
 
-        Scroll_U_D: Scroll_U_D {
-            compatible = "zmk,behavior-sensor-rotate";
-            label = "SCROLL_U_D";
-            #sensor-binding-cells = <0>;
-            bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
-
-            tap-ms = <20>;
-        };
-
-        Scroll_LR: Scroll_LR {
-            compatible = "zmk,behavior-sensor-rotate";
-            label = "SCROLL_LR";
-            #sensor-binding-cells = <0>;
-            bindings = <&msc SCRL_LEFT>, <&msc SCRL_RIGHT>;
-
-            tap-ms = <20>;
-        };
-
-        Scroll_RL: Scroll_RL {
-            compatible = "zmk,behavior-sensor-rotate";
-            label = "SCROLL_RL";
-            #sensor-binding-cells = <0>;
-            bindings = <&msc SCRL_RIGHT>, <&msc SCRL_LEFT>;
-
-            tap-ms = <20>;
-        };
     };
 
     combos {
