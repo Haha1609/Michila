@@ -45,7 +45,7 @@ layers:
   - {t: ']', s: '}'}
   - X
   - $$mdi:apple-keyboard-option$$
-  - LGUI
+  - $$mdi:keyboard-esc$$
   - $$mdi:apple-keyboard-control$$
   - '&mkp MB3'
   - $$mdi:arrow-down-bold$$
