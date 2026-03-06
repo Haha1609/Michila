@@ -196,11 +196,6 @@
             key-positions = <13 14>;
             layers = <0 1 2 3>;
         };
-
-        clrBT {
-            bindings = <&bt BT_CLR_ALL>;
-            key-positions = <37 34 38 41>;
-        };
     };
 
     macros {
