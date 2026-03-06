@@ -337,5 +337,3 @@ combos:
 - p: [13, 14]
   k: $$mdi:keyboard-tab$$
   l: [Default Layer, Lower Layer, Raise Layer, FN]
-- p: [37, 34, 38, 41]
-  k: BT CLR ALL
