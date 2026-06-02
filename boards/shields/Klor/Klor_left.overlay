@@ -12,9 +12,9 @@
             ;
 };
 
-//&encoder_left {
-//    status = "okay";
-//              };
+&encoder_left {
+    status = "okay";
+             };
 
 
 
