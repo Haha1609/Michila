@@ -1,6 +1,6 @@
 file_format: "1"
-id: Klor
-name: Klor
+id: Kyria
+name: Kyria
 type: shield
 url: https://github.com/Haha1609/Michila
 type: board
@@ -14,8 +14,8 @@ features:
   - pointer
   - encoder
 siblings:
-  - Klor_left
-  - Klor_right
+  - Kyria_left
+  - Kyria_right
 
   
 

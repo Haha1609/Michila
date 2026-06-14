@@ -1,8 +1,5 @@
-#include "Klor.dtsi"
+#include "Kyria.dtsi"
 
-&default_transform { 
-    col-offset = <6>;
-};
 
 &kscan0 {
     col-gpios
@@ -11,17 +8,15 @@
              <&gpio0 2 GPIO_ACTIVE_HIGH>,
              <&gpio1 15  GPIO_ACTIVE_HIGH>,  
              <&gpio1 13 GPIO_ACTIVE_HIGH>,
-             <&gpio1 11  GPIO_ACTIVE_HIGH>
+             <&gpio1 11  GPIO_ACTIVE_HIGH>,
+             <&gpio0 10  GPIO_ACTIVE_HIGH>,
+             <&gpio0 9  GPIO_ACTIVE_HIGH>
             ;
 };
 
-&encoder_right {
+&encoder_left {
     status = "okay";
-               };
-
-
-
-
+             };
 
 
 
